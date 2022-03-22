@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg>
+    </nav>
+    <main class="contenedor">
+
+        <h1>Tu Carrito de Compras</h1>
+        <div class="shoppingCartItemsContainer">
+            <div class="row shoppingCartItem">
+                <div class="col-6 camisa">
+                    <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                        <img src="img/1.jpg" alt="Imagen del Producto" class="shopping-cart-image camisa__imagen">
+                    </div>
+                </div>
+                <h3 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Vue JS</h3>
+                <div class="col-2">
+                    <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                        <p class="item-price mb-0 shoppingCartItemPrice">$25</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                        <input class="shopping-cart-quantity-input shoppingCartItemQuantity formulario__campo formulario__campo--cantidad " type="number" placeholder="Cantidad" value=1 ">
+                    <button class="btn btn-danger buttonDelete formulario__submit " type="button ">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4>Total $0</h4>
+        
+        <!-- <h1>React JS</h1>
+
+        <div class="camisa ">
+            <img class="camisa__imagen " src="img/1.jpg " alt="Imagen del Producto ">
+
+            <div class="camisa__contenido ">
+                <p>Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus at, semper dapibus turpis. Duis pellentesque, risus sit amet placerat porttitor, tortor augue volutpat ante, non dignissim odio ligula at arcu.</p>
+
+                <form class="formulario ">
+                    <select class=" formulario__campo formulario__campo--talla " name=" " id=" ">
+                        <option disabled selected value=" ">-- Seleccionar Talla --</option>
+                        <option value=" ">Chica</option>
+                        <option value=" ">Mediana</option>
+                        <option value=" ">Grande</option>
+                    </select>
+                    <input class="formulario__campo formulario__campo--cantidad " type="number " placeholder="Cantidad " min="1 ">
+                    <input class="formulario__submit " type="submit " value="Agregar al Carrito ">
+                </form>
+            </div>
+        </div> -->
+    </main>
+
+    <footer class="footer ">
+        <p class="footer__texto ">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+    <script src="js/main.js "></script>
+ 
+
+</body>
+
+</html>
